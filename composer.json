@@ -1,0 +1,36 @@
+{
+    "name": "LogManager/sdk-logs",
+    "description": "Um pacote para gerenciar logs das apps desenvolvidas pela logmanager.",
+    "authors": [
+        {
+            "name": "Graziani",
+            "email": "graziani@logmanager.com.br"
+        },
+        {
+            "name": "Jesiel Nunes",
+            "email": "jesiel@logmanager.com.br"
+        }
+    ],
+    "minimum-stability": "stable",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "jenssegers/mongodb": "3.8.*"
+    },
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "LogManager\\sdk-logs\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LogManager\\SdkLogs\\SdkLogsServiceProvider"
+            ],
+            "aliases": {
+                "SDKLogs": "LogManager\\SdkLogs\\Facades\\SDKLogs"
+            }
+        }
+    }
+}
