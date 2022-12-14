@@ -22,7 +22,7 @@ php artisan vendor:publish --provider="LogManager\SdkLogs\SdkLogsServiceProvider
 ```
 'mongodb' => [
     'driver' => 'mongodb',
-    'host' => env('MONGO_DB_HOST', 'logmanager-mongodb-production.infra.logmanager.com.br'),
+    'host' => env('MONGO_DB_HOST', '127.0.0.0'),
     'port' => env('MONGO_DB_PORT', 27017),
     'database' => env('MONGO_DB_DATABASE', 'homestead'),
     'username' => env('MONGO_DB_USERNAME', 'homestead'),
