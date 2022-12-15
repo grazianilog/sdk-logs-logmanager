@@ -12,6 +12,7 @@
     }
   ],
   "license": "MIT",
+  "minimum-stability": "stable",
   "require": {
     "jenssegers/mongodb": "3.8.*"
   },
